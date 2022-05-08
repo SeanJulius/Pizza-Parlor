@@ -12,4 +12,10 @@ Test: "It should return size and different toppings."
 Code: let pizza = new Pizza("foal",["cotton candy","sprinkles","rainbow sherbet"]);
 Expect: pizza.size === "foal" & pizza.topping === ["cotton candy","sprinkles","rainbow sherbet"];
 
+Describe: Pizza.prototype.calculator()
+
+Test: "It should return the siza and toppings with a price."
+Code: let pizza = new Pizza("foal",["cotton candy","sprinkles","rainbow sherbet"]); pizzaCost = pizza.calculator();
+Expect: pizzaCost === 10;
+
 
