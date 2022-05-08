@@ -1,10 +1,83 @@
 <!DOCTYPE html>
-<html lang="en-US">
-<head>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery-3.6.0.js"></script>
-  <script src="js/scripts.js"></script>
-  <title>Pizza Parlor</title>
-</head>
-<body>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Unicorn Pizza Parlor</title>
+  </head>
+  <body>
+    <div class="well" id="heading">
+      <h1 id="headingText">Unicorn Pizza Parlor</h1>
+      <h3 id="headingSubText">Ride the Unicorn through your dream pizza.</h3>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+        <div class="well" id="intro">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <div class="well" id="optionWell">
+            <div class="optionHeading">
+              <h2>Let's build your pizza!</h2>
+            </div>
+            <form class="pizzaOption">
+              <div class="row">
+                <div class="col-md-12">
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="size">
+                  <h4>What size would you like?</h4>
+                  <select id="size">
+                    <option>foal</option>
+                    <option>mare</option>
+                    <option>stallion</option>
+                  </select>
+                </div>
+                <div class="topping">
+                  <h4>Add a layer to the dream.</h4>
+                  <select id="topping">
+                    <option selected="selected">-----</option>
+                    <option>cotton candy</option>
+                    <option>sprinkles</option>
+                    <option>rainbow sherbet</option>
+                  </select>
+                </div>
+              </div>
+              <button type="submit" name="btn-warning btn">Dream come true!</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-6">
+          <div class="well" id="pizzaWell">
+            <h2>Here's your pizza!</h2>
+            <div class="temporary">
+              <h2 id="temporary">Waiting for order...</h2>
+            </div>
+            <div class="results">
+              <h4>Order details:</h4>
+              <h5 id="sizeResult"> </h5>
+
+              </ul>
+              <h5>Topping:</h5>
+              <ul id="toppingResult">
+
+              </ul><br>
+            </div>
+            <div class="totalPrice">
+              <h5 id="total"> </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
