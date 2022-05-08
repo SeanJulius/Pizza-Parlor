@@ -16,6 +16,6 @@ Describe: Pizza.prototype.calculator()
 
 Test: "It should return the siza and toppings with a price."
 Code: let pizza = new Pizza("foal",["cotton candy","sprinkles","rainbow sherbet"]); pizzaCost = pizza.calculator();
-Expect: pizzaCost === 10;
+Expect: pizzaCost === 13;
 
 
